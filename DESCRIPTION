@@ -1,0 +1,15 @@
+Package: nntcalc
+Type: Package
+Title: Calculator of unadjusted, adjusted and marginal NNT
+Version: 1.0
+Author: Valentin Vancak <valentin.vancak@gmail.com>
+Maintainer: Valentin Vancak <valentin.vancak@gmail.com>
+Description: This package provides functions to calculate the adjusted, the unadjusted and the marginal Laupacis NNT with the corresponding 95% confidence intervals. Available models include normal distributed outcomes with equal and unequal variances, and exponential distribution.
+             Available regression models include one way ANOVA, linear regression, logistic regression, and Cox model. 
+             In addition, the package provides a function to calculate the Kaplan Meier Laupacis NNT, and Kraemer & Kupfer's NNT.
+Depends: R (>= 3.5.0)
+License: MIT + file LICENSE
+Imports: boot, stats, MASS, survival, mvtnorm
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
