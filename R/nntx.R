@@ -131,7 +131,7 @@ nnt_x <- function( model,          # regression model; anova, linreg, logreg
 
   }
 
-  return(df)
+  return( round(df, 2) )
 
   }
 
