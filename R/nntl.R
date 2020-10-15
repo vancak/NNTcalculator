@@ -9,10 +9,10 @@
 #' @param treat          vector of response variable of the treatment group
 #' @param control        vector of response variable of the control group
 #' @param cutoff         a scalar that is the MCID
-#' @param decrease       TRUE or FALSE. Indicates whether the MCID change is decrease in the response variable
+#' @param decrease       logical TRUE or FALSE. Indicates whether the MCID change is decrease in the response variable
 #' @param dist           distribution type (if specified); "normal" (Normal), "expon" (Exponential).
 #' The default value is 'none'.
-#' @param equal.var      TRUE or FALSE; Indicates whether the variances are equal - for normal distribution only.
+#' @param equal.var      logical TRUE or FALSE; Indicates whether the variances are equal - for normal distribution only.
 #' The default value is TRUE.
 #' @return The estimated Laupacis' NNT and its confidence intervals using the specified estimation method.
 #' @references Laupacis, A., Sackett, D. L., & Roberts, R. S. (1988). An assessment of clinically useful measures of the consequences of treatment. New England journal of medicine, 318(26), 1728-1733.
@@ -26,7 +26,8 @@
 #'         equal.var = TRUE,
 #'         dist      = "normal",
 #'         decrease  = FALSE )
-#'
+#' @import stats
+#' @import boot
 #' @export
 #'
 nnt_l <- function( type,           # estimator type, e.g., laupacis, mle, furukawa

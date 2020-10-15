@@ -8,11 +8,12 @@
 #'  and 'non-param' (for the non-parametric MLE)
 #' @param treat          vector of response variable of the treatment group
 #' @param control        vector of response variable of the control group
-#' @param decrease       TRUE or FALSE. Indicates whether the MCID change is decrease in the response variable
+#' @param decrease       logical TRUE or FALSE. Indicates whether the MCID change is decrease in the response variable
 #' @param dist           distribution type (only for the 'mle' type estimator);
 #'  "norm" (Normal), "expon" (Exponential). The default value is 'none'
-#' @param equal.var      TRUE or FALSE; Indicates whether the variances are equal - for normal distribution only. The default value is TRUE
-#'
+#' @param equal.var      logical TRUE or FALSE; Indicates whether the variances are equal - for normal distribution only. The default value is TRUE
+#' @import stats
+#' @import boot
 #' @return The estimated Kraemer & Kupfer's NNT and its confidence intervals using the specified estimation method.
 #' @references Kraemer, H. C., & Kupfer, D. J. (2006). Size of treatment effects and their importance to clinical research and practice. Biological psychiatry, 59(11), 990-996.
 #' @references Vancak, V., Goldberg, Y., & Levine, S. Z. (2020). Systematic analysis of the number needed to treat. Statistical Methods in Medical Research, 0962280219890635.

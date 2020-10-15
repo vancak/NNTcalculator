@@ -25,7 +25,7 @@ arm. Suitable for linear and logistic regression.}
 
 \item{adj}{value that the NNT need to be adjusted for. The default value is mean of x.}
 
-\item{decrease}{TRUE or FALSE. Indicates whether the MCID change is decrease in the response variable}
+\item{decrease}{logical TRUE or FALSE. Indicates whether the MCID change is decrease in the response variable}
 
 \item{data}{data frame that contains the required variables for the computations.}
 }

@@ -17,20 +17,20 @@
 #' data(anova_data)
 #'
 #' ### SUCCESS = INCREASE
-#' nnt_anova(  response  = anova_data$y,
-#'             x         = anova_data$gr,
-#'             cutoff    = 0,
-#'             base      = 1,
-#'             decrease  = FALSE,
-#'             data      = anova_data)
-#'
-#' ### SUCCESS = DECREASE
-#' nnt_anova(     response  = anova_data$y,
-#'                x         = anova_data$gr,
-#'                cutoff    = 2,
-#'                base      = 4,
-#'                decrease  = TRUE,
-#'                data      = anova_data)
+# nnt_anova(  response  = anova_data$y,
+#             x         = anova_data$gr,
+#             cutoff    = 0,
+#             base      = 1,
+#             decrease  = FALSE,
+#             data      = anova_data)
+#
+# ### SUCCESS = DECREASE
+# nnt_anova(     response  = anova_data$y,
+#                x         = anova_data$gr,
+#                cutoff    = 2,
+#                base      = 4,
+#                decrease  = TRUE,
+#                data      = anova_data)
 nnt_anova <- function( response,       # vector of the response variable
                        x,              # vector of the explanatory variable
                        cutoff,         # the MCID
@@ -53,7 +53,7 @@ nnt_anova <- function( response,       # vector of the response variable
 
     ### control arm ###
 
-    m1      = aov( response ~ relevel( factor( x ), ref = base ), data  = dat1 )
+    m1      = aov( y ~ relevel( factor( x ), ref = base ), data  = dat1 )
 
     sum     = summary.lm(m1)
 
@@ -277,7 +277,7 @@ nnt_anova <- function( response,       # vector of the response variable
 
       for(j in 1:length(K)){
 
-        row_names[j] = paste(c("NNT", "(", j, ")" ), sep = "", collapse = "")
+        row_names[j] = paste(c("NNT", "(", sort( unique( x[x != base ] ) )[j], ")" ), sep = "", collapse = "")
 
       }
 
@@ -507,7 +507,7 @@ nnt_anova <- function( response,       # vector of the response variable
 
       for(j in 1:length(K)){
 
-        row_names[j] = paste(c("NNT", "(", j, ")" ), sep = "", collapse = "")
+        row_names[j] = paste(c("NNT", "(", sort( unique( x[x != base ] ) )[j], ")" ), sep = "", collapse = "")
 
       }
 

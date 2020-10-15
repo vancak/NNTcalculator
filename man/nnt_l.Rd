@@ -17,12 +17,12 @@ nnt_l(type, treat, control, cutoff, decrease, dist = "none", equal.var = TRUE)
 
 \item{cutoff}{a scalar that is the MCID}
 
-\item{decrease}{TRUE or FALSE. Indicates whether the MCID change is decrease in the response variable}
+\item{decrease}{logical TRUE or FALSE. Indicates whether the MCID change is decrease in the response variable}
 
 \item{dist}{distribution type (if specified); "normal" (Normal), "expon" (Exponential).
 The default value is 'none'.}
 
-\item{equal.var}{TRUE or FALSE; Indicates whether the variances are equal - for normal distribution only.
+\item{equal.var}{logical TRUE or FALSE; Indicates whether the variances are equal - for normal distribution only.
 The default value is TRUE.}
 }
 \value{
@@ -41,7 +41,6 @@ and returns the estimated NNT using the specified estimation method.
         equal.var = TRUE,
         dist      = "normal",
         decrease  = FALSE )
-
 }
 \references{
 Laupacis, A., Sackett, D. L., & Roberts, R. S. (1988). An assessment of clinically useful measures of the consequences of treatment. New England journal of medicine, 318(26), 1728-1733.

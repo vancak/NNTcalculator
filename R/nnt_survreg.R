@@ -13,7 +13,11 @@
 #' @param adj           the x value that the NNT(y|x) need to be adjusted for. The default value is the mean of x.
 #' @param time.point    the fixed time point y for NNT(y|x), and NNT(y)
 #' @param data          analyzed data frame that contains the required variables for the computations.
-#'
+#' @import stats
+#' @import boot
+#' @import mvtnorm
+#' @import MASS
+#' @import survival
 #' @return The estimated unadjusted, marginal and adjusted NNTs with their corresponding 95 percent confidence intervals.
 #' @references Therneau, T. M., & Lumley, T. (2014). Package survival. Survival analysis Published on CRAN, 2, 3.
 #' @references Kaplan, E. L., & Meier, P. (1958). Nonparametric estimation from incomplete observations. Journal of the American statistical association, 53(282), 457-481.

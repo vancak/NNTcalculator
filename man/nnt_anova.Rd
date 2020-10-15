@@ -28,25 +28,8 @@ Takes a data-set suitable for a one-way ANOVA analysis and returns
 the estimated adjusted NNT(k) and the marginal NNT.
 }
 \keyword{###}
-\keyword{0,}
-\keyword{1,}
-\keyword{2,}
-\keyword{4,}
 \keyword{=}
-\keyword{DECREASE}
-\keyword{FALSE,}
 \keyword{INCREASE}
 \keyword{SUCCESS}
-\keyword{TRUE,}
-\keyword{anova_data$gr,}
-\keyword{anova_data$y,}
-\keyword{anova_data)}
-\keyword{base}
-\keyword{cutoff}
-\keyword{data}
 \keyword{data(anova_data)}
-\keyword{decrease}
 \keyword{internal}
-\keyword{nnt_anova(}
-\keyword{response}
-\keyword{x}

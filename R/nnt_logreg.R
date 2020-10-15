@@ -35,6 +35,8 @@ nnt_logreg <- function( response,       # vector of the response variable
 
   attach(dat1, warn.conflicts = F)
 
+  gr      = dat1$gr
+
   adj     = ifelse( !missing(adj), adj, round( mean(dat1$x, na.rm = T), 2) )
 
   fun_g   = function(h){ ifelse( h > 0, 1/h, Inf ) }

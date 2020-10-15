@@ -16,23 +16,23 @@
 #'
 #' data(linreg_data)
 #'
-#' nnt_lm( response = linreg_data$y,
-#'         x        = linreg_data$x_var,
-#'         cutoff   = 3,
-#'         group    = linreg_data$gr,
-#'         decrease = F,
-#'         adj      = 2.6,
-#'         data     = linreg_data )
-#'
-#' inv_dat = data.frame( y = linreg_data$y, x_var = linreg_data$x_var, gr = 1 - linreg_data$gr )
-#'
-#' nnt_lm( response = inv_dat$y,
-#'         x        = inv_dat$x_var,
-#'         cutoff   = 3,
-#'         group    = inv_dat$gr,
-#'         decrease = T,
-#'         adj      = 2.6,
-#'         data     = inv_dat )
+# nnt_lm( response = linreg_data$y,
+#         x        = linreg_data$x_var,
+#         cutoff   = 3,
+#         group    = linreg_data$gr,
+#         decrease = F,
+#         adj      = 2.6,
+#         data     = linreg_data )
+#
+# inv_dat = data.frame( y = linreg_data$y, x_var = linreg_data$x_var, gr = 1 - linreg_data$gr )
+#
+# nnt_lm( response = inv_dat$y,
+#         x        = inv_dat$x_var,
+#         cutoff   = 3,
+#         group    = inv_dat$gr,
+#         decrease = T,
+#         adj      = 2.6,
+#         data     = inv_dat )
 nnt_lm <- function( response,       # vector of the response variable
                     x,              # vector of the explanatory variable
                     cutoff,         # the MCID
@@ -48,6 +48,8 @@ nnt_lm <- function( response,       # vector of the response variable
   dat1    = data.frame( y = response, x = x, gr = group )
 
   attach(dat1, warn.conflicts = F)
+
+  gr      = dat1$gr
 
   fun_g   = function(h){ ifelse( h > 0, 1/h, Inf ) }
 

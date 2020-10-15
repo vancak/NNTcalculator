@@ -11,7 +11,7 @@
 #' @param x             vector of the explanatory variable.
 #' @param cutoff        the MCID threshold. This argument is suitable for continuous response variables,
 #'  namely for ANOVA and linear regression.
-#' @param decrease      TRUE or FALSE. Indicates whether the MCID change is decrease in the response variable
+#' @param decrease      logical TRUE or FALSE. Indicates whether the MCID change is decrease in the response variable
 #' @param group         allocated arm variable where 1 corresponds to the treatment arm, and 0 to the control
 #' arm. Suitable for linear and logistic regression.
 #' @param adj           value that the NNT need to be adjusted for. The default value is mean of x.
@@ -20,6 +20,10 @@
 #'
 #' @return The estimated unadjusted, marginal and adjusted NNT with their corresponding 95 percent confidence intervals
 #' given a specified model, and adjusted for a specified value of the explanatory variables.
+#' @import stats
+#' @import boot
+#' @import mvtnorm
+#' @import MASS
 #' @examples
 #' data(anova_data)
 #'

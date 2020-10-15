@@ -25,24 +25,6 @@ nnt_lm(response, x, cutoff, group, decrease, adj, data)
 The estimated marginal and adjusted NNT with their corresponding 95 percent confidence intervals.
 
 data(linreg_data)
-
-nnt_lm( response = linreg_data$y,
-        x        = linreg_data$x_var,
-        cutoff   = 3,
-        group    = linreg_data$gr,
-        decrease = F,
-        adj      = 2.6,
-        data     = linreg_data )
-
-inv_dat = data.frame( y = linreg_data$y, x_var = linreg_data$x_var, gr = 1 - linreg_data$gr )
-
-nnt_lm( response = inv_dat$y,
-        x        = inv_dat$x_var,
-        cutoff   = 3,
-        group    = inv_dat$gr,
-        decrease = T,
-        adj      = 2.6,
-        data     = inv_dat )
 }
 \description{
 Internal function. Not for users. Calculates Laupacis' adjusted and marginal NNT

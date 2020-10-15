@@ -14,12 +14,12 @@ and 'non-param' (for the non-parametric MLE)}
 
 \item{control}{vector of response variable of the control group}
 
-\item{decrease}{TRUE or FALSE. Indicates whether the MCID change is decrease in the response variable}
+\item{decrease}{logical TRUE or FALSE. Indicates whether the MCID change is decrease in the response variable}
 
 \item{dist}{distribution type (only for the 'mle' type estimator);
 "norm" (Normal), "expon" (Exponential). The default value is 'none'}
 
-\item{equal.var}{TRUE or FALSE; Indicates whether the variances are equal - for normal distribution only. The default value is TRUE}
+\item{equal.var}{logical TRUE or FALSE; Indicates whether the variances are equal - for normal distribution only. The default value is TRUE}
 }
 \value{
 The estimated Kraemer & Kupfer's NNT and its confidence intervals using the specified estimation method.
