@@ -1,4 +1,4 @@
-## nntcalc: NNT calculator 
+## nntcalc: The Number Needed to Treat (NNT) calculator 
 
 [Valentin Vancak](https://www.linkedin.com/in/valentin-vancak-0a56227a/?originalSubdomain=il)
 
