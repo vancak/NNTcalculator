@@ -10,4 +10,4 @@ Tha package is called `nntcalc`. To load it after installation type
 
 `library(nntcalc)`
 
-For further details and examples see https://github.com/vancak/NNTcalculator/blob/main/manual.pdf. 
+For further details and examples please see [package manual](https://github.com/vancak/NNTcalculator/blob/main/manual.pdf). 
