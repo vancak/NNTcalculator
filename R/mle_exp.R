@@ -100,8 +100,8 @@ mle_exp_dec = function( treat, control, tau, yt_bar, yc_bar, p_t.boot, p_c.boot,
   output           = cbind( nnt.v, t( ci.d.mle ), t( ci.bs ) )
 
   colnames(output) = c( "NNT MLE",
-                        "CI DELTA L", "CI DELTA R",
-                        "CI BS L",    "CI BS R" )
+                        "CI DL L",    "CI DL U",
+                        "CI NBS L",   "CI NBS U" )
 
   return( output )
 }

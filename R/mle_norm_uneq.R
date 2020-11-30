@@ -70,8 +70,8 @@ mle_norm_uneq_inc = function( treat, control, tau, yt_bar, yc_bar, s_t, s_c, p_t
   output           = cbind( nnt.v, t( ci.d.mle ), t( ci.bs ) )
 
   colnames(output) = c( "NNT MLE",
-                        "CI DELTA L", "CI DELTA R",
-                        "CI BS L",    "CI BS R" )
+                        "CI  DL L",  "CI DL U",
+                        "CI  NBS L", "CI NBS U" )
   return( output )
 }
 
@@ -122,7 +122,7 @@ mle_norm_uneq_dec = function( treat, control, tau, yt_bar, yc_bar, s_t, s_c, p_t
   output     = cbind( nnt.v, t( ci.d.mle ), t( ci.bs ) )
 
   colnames(output) = c( "NNT MLE",
-                        "CI DELTA L", "CI DELTA R",
-                        "CI BS L",    "CI BS R" )
+                        "CI DL L",     "CI DL U",
+                        "CI NBS L",    "CI NBS U" )
   return( output )
 }

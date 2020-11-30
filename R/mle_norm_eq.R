@@ -61,8 +61,8 @@ ci.bs      =  c( max( quantile(nnt.v.bs, .025), 1), quantile(nnt.v.bs, .975) )
 output           = cbind( nnt.v, t( ci.d.mle ), t( ci.bs ) )
 
 colnames(output) = c( "NNT MLE",
-                      "CI DELTA L", "CI DELTA R",
-                      "CI BS L",    "CI BS R" )
+                      "CI DL L", "CI DL U",
+                      "CI NBS L", "CI NBS U" )
 
 return( output )
 }
@@ -111,8 +111,8 @@ mle_norm_eq_dec = function( treat, control, tau, yt_bar, yc_bar, s_ml, p_t.boot,
   output           = cbind( nnt.v, t( ci.d.mle ), t( ci.bs ) )
 
   colnames(output) = c( "NNT MLE",
-                        "CI DELTA L", "CI DELTA R",
-                        "CI BS L",    "CI BS R" )
+                        "CI DL L",    "CI DL  U",
+                        "CI NBS L",   "CI NBS U" )
 
   return( output )
 }

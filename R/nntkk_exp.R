@@ -53,8 +53,8 @@ nntkk_exp_inc = function( treat, control, yt_bar, yc_bar, p_t.boot, p_c.boot, n_
   output           = cbind( nnt.kk, t( ci.d.nnt_kk ), t( ci.bs ) )
 
   colnames(output) = c( "KK-NNT MLE",
-                        "CI DELTA L", "CI DELTA R",
-                        "CI BS L",    "CI BS R" )
+                        "CI DL L",     "CI DL U",
+                        "CI NBS L",    "CI NBS U" )
 
   return( output )
 }
@@ -99,8 +99,8 @@ nntkk_exp_dec = function( treat, control, yt_bar, yc_bar, p_t.boot, p_c.boot, n_
   output           = cbind( nnt.kk, t( ci.d.nnt_kk ), t( ci.bs ) )
 
   colnames(output) = c( "KK-NNT MLE",
-                        "CI DELTA L", "CI DELTA R",
-                        "CI BS L",    "CI BS R" )
+                        "CI DL L", "CI DL U",
+                        "CI NBS L", "CI NBS U" )
 
   return( output )
 }

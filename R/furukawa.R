@@ -39,7 +39,7 @@ furukawa_inc = function( treat, control, tau, d, d.bs, p_c, p_t.boot, p_c.boot, 
   output           =  cbind( nnt.f, t( ci.bs ) )
 
   colnames(output) = c( "NNT FL",
-                        "CI BS L",    "CI BS R" )
+                        "CI NBS L",    "CI NBS R" )
 
   return( output )
 }
@@ -68,7 +68,7 @@ furukawa_dec = function( treat, control, tau, d, d.bs, p_c, p_t.boot, p_c.boot, 
   output           =  cbind( nnt.f, t( ci.bs ) )
 
   colnames(output) = c( "NNT FL",
-                        "CI BS L",    "CI BS R" )
+                        "CI NBS L", "CI NBS U" )
 
   return( output )
 }

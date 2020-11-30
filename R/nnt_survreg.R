@@ -444,12 +444,14 @@ ps_x = function( t, x ) {
   out_list1 = matrix( unlist( out_list ), ncol = 9, byrow = T )
 
   colnames(out_list1) = c("NNT",
-                          "CI TR L",  "CI TR R",
-                          "CI DL L",  "CI DL R",
-                          "CI NBS L", "CI NBS R",
-                          "CI PBS L", "CI PBS R"  )
+                          "CI TR  L",  "CI TR U",
+                          "CI DL  L",  "CI DL U",
+                          "CI NBS L",  "CI NBS U",
+                          "CI PBS L",  "CI PBS U"  )
 
-  rownames(out_list1) = c("NNT KM", "NNT COX", paste(c("NNT", "(", t, "|", adj, ")" ), sep = "", collapse = "") )
+  rownames(out_list1) = c(paste(c("NNT-KM", "(", t,  ")" ), sep = "", collapse = ""),
+                          paste(c("NNT-COX", "(", t,  ")" ), sep = "", collapse = ""),
+                          paste(c("NNT", "(", t, "|", adj, ")" ), sep = "", collapse = "") )
 
 
   return( out_list1 )

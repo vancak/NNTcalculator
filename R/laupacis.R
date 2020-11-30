@@ -46,10 +46,10 @@ laupacis <- function( treat, control, p_t, p_c, n_t, n_c, p_t.boot, p_c.boot ) {
 
   output           = cbind(nntl, t( ci_w ), t( ci_d ) , t( ci_bs ) )
 
-   colnames(output) = c( "NNTL",
-                        "CI WALD L",  "CI WALD R",
-                        "CI DELTA L", "CI DELTA R",
-                        "CI BS L",    "CI BS R" )
+   colnames(output) = c( "NNT L",
+                        "CI WALD L",  "CI WALD U",
+                        "CI DL L",    "CI DL U",
+                        "CI NBS L",   "CI NBS U" )
   return( output )
  }
 

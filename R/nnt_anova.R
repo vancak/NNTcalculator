@@ -268,10 +268,10 @@ nnt_anova <- function( response,       # vector of the response variable
 
       out_list1 = matrix( unlist( out_list ), ncol = 9, byrow = T )
       colnames(out_list1) = c("NNT",
-                              "CI TR L",  "CI TR R",
-                              "CI DL L",  "CI DL R",
-                              "CI NBS L", "CI NBS R",
-                              "CI PBS L", "CI PBS R"  )
+                              "CI TR L",  "CI TR U",
+                              "CI DL L",  "CI DL U",
+                              "CI NBS L", "CI NBS U",
+                              "CI PBS L", "CI PBS U"  )
 
       row_names = NULL
 
@@ -498,10 +498,10 @@ nnt_anova <- function( response,       # vector of the response variable
 
       out_list1 = matrix( unlist( out_list ), ncol = 9, byrow = T )
       colnames(out_list1) = c("NNT",
-                              "CI TR L",  "CI TR R",
-                              "CI DL L",  "CI DL R",
-                              "CI NBS L", "CI NBS R",
-                              "CI PBS L", "CI PBS R"  )
+                              "CI TR L",  "CI TR U",
+                              "CI DL L",  "CI DL U",
+                              "CI NBS L", "CI NBS U",
+                              "CI PBS L", "CI PBS U"  )
 
       row_names = NULL
 

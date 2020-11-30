@@ -225,10 +225,10 @@ nnt_logreg <- function( response,       # vector of the response variable
     out_list1 = matrix( unlist( out_list ), ncol = 9, byrow = T )
 
     colnames(out_list1) = c("NNT",
-                            "CI TR L",  "CI TR R",
-                            "CI DL L",  "CI DL R",
-                            "CI NBS L", "CI NBS R",
-                            "CI PBS L", "CI PBS R"  )
+                            "CI TR L",  "CI TR U",
+                            "CI DL L",  "CI DL U",
+                            "CI NBS L", "CI NBS U",
+                            "CI PBS L", "CI PBS U"  )
 
     rownames(out_list1) = c("NNT L", "NNT MLE", paste(c("NNT", "(", adj, ")" ), sep = "", collapse = "") )
 

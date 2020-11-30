@@ -55,9 +55,9 @@ nntkk_norm_uneq_inc = function( yt_bar, yc_bar, s_t, s_c, p_t.boot, p_c.boot, n_
 
   output           = cbind( nnt.kk, t( ci.d.nnt_kk ), t( ci.bs.nnt_k ) )
 
-  colnames(output) = c( "NNT KK",
-                        "CI DELTA L", "CI DELTA R",
-                        "CI BS L",    "CI BS R" )
+  colnames(output) = c( "KK-NNT",
+                        "CI DL L", "CI DL U",
+                        "CI NBS L","CI NBS U" )
 
   return( output )
 }
@@ -104,9 +104,9 @@ nntkk_norm_uneq_dec = function( yt_bar, yc_bar, s_t, s_c, p_t.boot, p_c.boot, n_
 
   output           = cbind( nnt.kk, t( ci.d.nnt_kk ), t( ci.bs.nnt_k ) )
 
-  colnames(output) = c( "NNT KK",
-                        "CI DELTA L", "CI DELTA R",
-                        "CI BS L",    "CI BS R" )
+  colnames(output) = c( "KK-NNT",
+                        "CI DL L", "CI DL U",
+                        "CI NBS L", "CI NBS U" )
 
   return( output )
 }

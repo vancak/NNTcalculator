@@ -52,10 +52,10 @@ nntkk_norm_eq_inc = function( treat, control, d, s_ml, p_t.boot, p_c.boot, s_ml.
 
   output           = cbind( nnt.kk, t( ci.fun.nnt_k ), t( ci.d.nnt_k ), t( ci.bs.nnt_k ) )
 
-  colnames(output) = c( "NNT KK",
-                        "CI COHEN L", "CI COHEN R",
-                        "CI DELTA L", "CI DELTA R",
-                        "CI BS L",    "CI BS R" )
+  colnames(output) = c( "KK-NNT",
+                        "CI COHEN L",  "CI COHEN U",
+                        "CI DL L",     "CI DL U",
+                        "CI NBS L",    "CI NBS U" )
   return( output )
 }
 
@@ -97,10 +97,10 @@ nntkk_norm_eq_dec = function( treat, control, d, s_ml, p_t.boot, p_c.boot, s_ml.
 
   output           = cbind( nnt.kk, t( ci.fun.nnt_k ), t( ci.d.nnt_k ), t( ci.bs.nnt_k ) )
 
-  colnames(output) = c( "NNT KK",
-                        "CI COHEN L", "CI COHEN R",
-                        "CI DELTA L", "CI DELTA R",
-                        "CI BS L",    "CI BS R" )
+  colnames(output) = c( "KK-NNT",
+                        "CI COHEN L", "CI COHEN U",
+                        "CI DL L",    "CI DL U",
+                        "CI NBS L",   "CI NBS U" )
 
   return( output )
 }

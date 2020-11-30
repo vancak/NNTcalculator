@@ -29,7 +29,7 @@ nntkk_nonparam<- function( treat, control, p_c.boot, p_tk ) {
   output           = cbind( nnt.kkn ,t( ci_bs ) )
 
   colnames(output) = c( "KK-NNT",
-                        "CI BS L",  "CI BS R" )
+                        "CI NBS L",  "CI NBS U" )
   return( output )
 }
 
