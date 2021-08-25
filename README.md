@@ -14,4 +14,4 @@ Tha package is called `nntcalc`. To load it after installation type
 
 For further details and examples please see [package manual](https://github.com/vancak/NNTcalculator/blob/main/manual.pdf). 
 
-Note: The simulations source code for the manuscript "The Number Needed to Treat Adjusted for Explanatory Variables in Regression and Survival Analysis: Theory and Application" is available [here](https://github.com/vancak/nntx_simulations). 
+*Note*: The simulations source code for the manuscript "The Number Needed to Treat Adjusted for Explanatory Variables in Regression and Survival Analysis: Theory and Application" is available [here](https://github.com/vancak/nntx_simulations). 
