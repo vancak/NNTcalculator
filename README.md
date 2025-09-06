@@ -17,9 +17,5 @@ For further details and examples please see [package manual](https://github.com/
 
 *NOTE*: The source code for the simulations presented in the manuscript "The Number Needed to Treat Adjusted for Explanatory Variables in Regression and Survival Analysis: Theory and Application" is available [here](https://github.com/vancak/nntx_simulations).
 
-
-Package: nntcalc
-Title: The Number Needed to Treat (NNT) Calculator
-Version: 1.1
-URL: https://github.com/vancak/NNTcalculator, https://doi.org/10.5281/zenodo.17068632
-
+**Cite:** Vancak V. *nntcalc: The Number Needed to Treat (NNT) calculator* (v1.1). Zenodo.  
+Version DOI: https://doi.org/10.5281/zenodo.17068632  
