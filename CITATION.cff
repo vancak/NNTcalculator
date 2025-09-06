@@ -3,7 +3,7 @@ title: "nntcalc: The Number Needed to Treat (NNT) calculator"
 message: "If you use this software, please cite it as below."
 type: software
 version: "1.1"
-date-released: "2022-04-07"
+date-released: "2020-04-07"
 repository-code: "https://github.com/vancak/NNTcalculator"
 doi: "10.5281/zenodo.17068632"   # version DOI here
 authors:
