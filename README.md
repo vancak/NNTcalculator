@@ -1,4 +1,5 @@
 ## nntcalc: The Number Needed to Treat (NNT) calculator 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17068632.svg)](https://doi.org/10.5281/zenodo.17068632)
 
 [Valentin Vancak](https://www.linkedin.com/in/valentin-vancak-0a56227a/?originalSubdomain=il)
 
@@ -14,4 +15,11 @@ Tha package is called `nntcalc`. To load it after installation type
 
 For further details and examples please see [package manual](https://github.com/vancak/NNTcalculator/blob/main/manual.pdf). 
 
-*NOTE*: The source code for the simulations presented in the manuscript "The Number Needed to Treat Adjusted for Explanatory Variables in Regression and Survival Analysis: Theory and Application" is available [here](https://github.com/vancak/nntx_simulations). 
+*NOTE*: The source code for the simulations presented in the manuscript "The Number Needed to Treat Adjusted for Explanatory Variables in Regression and Survival Analysis: Theory and Application" is available [here](https://github.com/vancak/nntx_simulations).
+
+
+Package: nntcalc
+Title: The Number Needed to Treat (NNT) Calculator
+Version: 1.1
+URL: https://github.com/vancak/NNTcalculator, https://doi.org/10.5281/zenodo.17068632
+
