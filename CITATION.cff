@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+title: "nntcalc: The Number Needed to Treat (NNT) calculator"
+message: "If you use this software, please cite it as below."
+type: software
+version: "1.1"
+date-released: "2022-04-07"
+repository-code: "https://github.com/vancak/NNTcalculator"
+doi: "10.5281/zenodo.17068632"   # version DOI here
+authors:
+  - family-names: Vancak
+    given-names: Valentin
+    orcid: "https://orcid.org/0000-0001-8732-7353"   
+preferred-citation:
+  type: software
+  title: "nntcalc: The Number Needed to Treat (NNT) calculator"
+  authors:
+    - family-names: Vancak
+      given-names: Valentin
+  year: 2020
+  version: "1.1"
+  doi: "10.5281/zenodo.17068632"
